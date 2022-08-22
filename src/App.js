@@ -40,45 +40,4 @@ const App = () => {
   );
 };
 
-
-// class App extends Component {
-//   constructor() {
-//     super();
-//     this.state = {
-//       monsters: [],
-//       searchField: "",
-//     };
-//   }
-//   componentDidMount() {
-//     fetch("https://jsonplaceholder.typicode.com/users")
-//       .then((response) => response.json())
-//       .then((users) =>
-//         this.setState(() => {
-//           return { monsters: users };
-//         })
-//       );
-//   }
-//   onSearchChange = (event) => {
-//     const searchField = event.target.value.toLocaleLowerCase(); //because the includes() method is case sensitive
-//     this.setState(() => {
-//       return { searchField: searchField };
-//     });
-//   };
-
-//   render() {
-
-//     return (
-//       <div className="App">
-//         <h1 className="app-title"> Monsters Rolodex </h1>
-//         <SearchBox
-//           className="search-box monsters"
-//           onChangeHandler={this.onSearchChange}
-//           placeholder="Search monsters"
-//         />
-//         <CardList monsters={filteredMonsters} />
-//       </div>
-//     );
-//   }
-// }
-
 export default App;
